@@ -57,7 +57,7 @@ class UserController extends Controller{
         $this->validate($request,$rules);
 
         // validate if Jobid is found in table tbluserjob
-        $userjob = UserJob::findOrFail($request->jobid);
+        ///$userjob = UserJob::findOrFail($request->jobid);
 
         $user = User::create($request->all());
         
